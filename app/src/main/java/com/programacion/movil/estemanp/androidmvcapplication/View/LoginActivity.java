@@ -36,6 +36,8 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         }else{
             Toast.makeText(this, "El usuario y contraseña no coinciden", Toast.LENGTH_SHORT).show();
+            userName.setText("");
+            password.setText("");
         }
     }
 }

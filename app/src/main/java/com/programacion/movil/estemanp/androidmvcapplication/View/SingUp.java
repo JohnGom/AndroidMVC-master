@@ -39,7 +39,7 @@ public class SingUp extends AppCompatActivity {
            AppController.getInstance().llenar(nombre.getText().toString(), apellido.getText().toString(),
                    userName.getText().toString(), password.getText().toString(), Integer.parseInt(edad.getText().toString()));
 
-            Toast.makeText(this, "registrado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Registrado", Toast.LENGTH_SHORT).show();
             nombre.setText("");
             apellido.setText("");
             userName.setText("");
@@ -48,7 +48,7 @@ public class SingUp extends AppCompatActivity {
             confirmP.setText("");
 
         }else{
-            Toast.makeText(this, "las contraseñas no son iguales", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Las contraseñas no son iguales", Toast.LENGTH_SHORT).show();
 
             password.setText("");
             confirmP.setText("");

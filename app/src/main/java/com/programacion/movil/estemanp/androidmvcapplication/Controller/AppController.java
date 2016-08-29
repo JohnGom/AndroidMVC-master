@@ -10,22 +10,20 @@ import com.programacion.movil.estemanp.androidmvcapplication.View.LandingActivit
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by lds on 22/08/2016.
- */
+
 public class AppController {
     private static AppController _instance;
-    private List<User> users;
+    private static List<User> users;
 
     public static AppController getInstance() {
         if (_instance == null) {
             _instance = new AppController();
+            users = new ArrayList<>();
         }
         return _instance;
     }
 
     public void llenar (String nombre, String apelllido,  String usuario,  String password, int edad) {
-        users = new ArrayList<User>();
         fillDateBases(nombre, apelllido, usuario, password, edad);
     }
 
